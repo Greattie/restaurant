@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  font-family: "Roboto Slab", serif;
+  background-color: whitesmoke;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  list-style: none;
+  display: flex;
+  /* height: 50px; */
+  justify-content: center;
+  align-items: center;
+}
+button {
+  cursor: pointer;
+}
+
+::placeholder {
+  padding-left: 1rem;
+}
+
+/* Header, Nav and LinkedLists style */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  border-bottom: 0.5px solid rgb(179, 179, 179);
+  background-color: rgb(241, 240, 240);
+  /* box-shadow: rgb(0 0 0 / 5%) 0px 6px 24px 0px, rgb(0 0 0 / 8%) 0px 0px 0px 1px; */
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.12) 0px 2px 10px 0px;
+  align-content: center;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  min-height: 70px;
+}
+
+.nav-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1rem;
+}
+.hamburger {
+  display: none;
+}
+li {
+  height: 60px;
+  /* border: 1px solid blue; */
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.links:hover {
+  background-color: rgb(177, 176, 176);
+  transition: 0.3s ease;
+  border-radius: 2px;
+}
+
+/* Main style */
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin: 0.5rem 1rem;
+  margin-top: 5.4rem;
+  color: #595a5e;
+}
+
+/* section 1 styling */
+.sect-1 {
+  /* border: 3px solid red; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 1em;
+  gap: 2em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  border: 2px solid rgb(136, 136, 136);
+  border-radius: 5px;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.5s all ease-in-out;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.card img {
+  margin: 10px auto;
+  border-radius: 5px;
+  width: 90%;
+  height: 150px;
+  object-fit: cover;
+}
+.card-text {
+  margin: 15px;
+}
+.card-text h2,
+.card-text p {
+  padding-bottom: 5px;
+}
+.card-text p {
+  font-weight: bold;
+}
+.card-text button {
+  padding: 0.5em;
+  border-radius: 10px;
+  height: 35px;
+  border: none;
+  background-image: linear-gradient(to right, yellow, rgb(255, 94, 0));
+}
+
+/* About styling */
+.container-about {
+  /* border: 2px solid green; */
+  margin-top: 3em;
+  background-color: #6c8a8af8;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  padding: 2.5rem;
+  padding-bottom: 4rem;
+}
+
+.container-about h2 {
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-size: 2rem;
+  color: #595a5e;
+  margin: 0.5rem 1rem;
+  margin-bottom: 0;
+}
+.container-about article {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%; */
+  gap: 2rem;
+  word-wrap: break-word;
+}
+.container-about article p {
+  line-height: 2;
+}
+.chef,
+.container-about article p {
+  width: 50%;
+  /* border: 2px solid black; */
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.chef {
+  border: 2px dashed #595a5e;
+  background-color: #d3d4d6ad;
+  border-radius: 5px;
+}
+.chef img {
+  width: 70%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* section 2 styling */
+.container-contact {
+  /* border: 4px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+}
+
+.container-contact h2 {
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-size: 2rem;
+  color: #595a5e;
+  margin: 0.5rem 1rem;
+}
+
+.content p,
+.content h3 {
+  margin: 0.5rem 1rem;
+  padding: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid; */
+  margin: 0.5rem 1rem;
+  gap: 1rem;
+}
+.form input {
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid gray;
+  margin: 0.5rem 1rem;
+  gap: 1rem;
+  outline: none;
+  background-color: whitesmoke;
+}
+
+.content h3 {
+  color: #595a5e;
+  font-size: 1.5rem;
+}
+
+.form button {
+  margin: 0.5rem 1rem;
+  height: 50px;
+  padding: 0.5em;
+  width: 8rem;
+  border: 0.2px solid rgba(255, 255, 255, 0.37);
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.form button:hover {
+  color: whitesmoke;
+  background-color: #595a5e;
+}
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 768px) {
+  .sect-1,
+  .container-about,
+  .container-about article,
+  .container-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card,
+  .chef,
+  .about-text {
+    min-width: 400px;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+}
